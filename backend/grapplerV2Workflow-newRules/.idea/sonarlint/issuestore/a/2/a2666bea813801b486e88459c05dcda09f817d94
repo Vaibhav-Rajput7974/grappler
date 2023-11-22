@@ -1,0 +1,29 @@
+
+h	java:S112„"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ô¡ˆŒ¼1
+h	java:S112†"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ô¡ˆŒ¼1
+h	java:S112ˆ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ó¡ˆŒ¼1
+T
+java:S2629E"7Use the built-in formatting to construct this argument.(ÁÎë±8Ü¡ˆŒ¼1
+Y
+java:S2629l"7Use the built-in formatting to construct this argument.(ÚÌ€íûÿÿÿÿ8İ¡ˆŒ¼1
+u
+java:S21393"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8š¢ˆŒ¼1
+^
+java:S3457E"AFormat specifiers should be used instead of string concatenation.(ÁÎë±8¢ˆŒ¼1
+u
+java:S2139J"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8Ÿ¢ˆŒ¼1
+u
+java:S2139["XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8£¢ˆŒ¼1
+c
+java:S3457l"AFormat specifiers should be used instead of string concatenation.(ÚÌ€íûÿÿÿÿ8ª¢ˆŒ¼1
+u
+java:S2139r"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8±¢ˆŒ¼1
+o
+java:S3776y"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Œ½…8½¢ˆŒ¼1
+c
+java:S2147…"ECombine this catch with the one at line 131, which has the same body.(Å¡ß8Ç¢ˆŒ¼1
+h
+java:S2147‡"ECombine this catch with the one at line 133, which has the same body.(¼¯•¶ùÿÿÿÿ8´Å™­¿1
+M	java:S106Š"+Replace this use of System.out by a logger.(Æ¡¡ÿÿÿÿÿ8Ï¢ˆŒ¼1
+u
+java:S2737“"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Ò¢ˆŒ¼1

@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  z-index: 1000;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.buttons button {
+  margin-right: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.create-button {
+  background-color: green;
+}
+
+.add-stages {
+  background-color: #eaff0053;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-button {
+  background-color: blue;
+}
+
+.add-project {
+  background-color: rgba(0, 255, 255, 0.495);
+}

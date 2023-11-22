@@ -1,0 +1,89 @@
+
+L
+java:S3740+"/Provide the parametrized type for this generic.(ëœß°8Û êã¾1
+K
+java:S37400"/Provide the parametrized type for this generic.(§àŠ8Ü êã¾1
+L
+java:S37405"/Provide the parametrized type for this generic.(ÇÆõõ8Ü êã¾1
+Q
+java:S3740:"/Provide the parametrized type for this generic.(°±ÜÕÿÿÿÿÿ8Ü êã¾1
+K
+java:S3740\"/Provide the parametrized type for this generic.(ìÈÅS8Ü êã¾1
+Q
+java:S3740a"/Provide the parametrized type for this generic.(âÜÒªùÿÿÿÿ8Ü êã¾1
+K
+java:S3740f"/Provide the parametrized type for this generic.(§àŠ8Ü êã¾1
+L
+java:S3740k"/Provide the parametrized type for this generic.(ÇÆõõ8Ü êã¾1
+Q
+java:S3740p"/Provide the parametrized type for this generic.(°±ÜÕÿÿÿÿÿ8Ü êã¾1
+R
+java:S3740’"/Provide the parametrized type for this generic.(ÖóŠ¬üÿÿÿÿ8Ü êã¾1
+L
+java:S3740—"/Provide the parametrized type for this generic.(§àŠ8Ü êã¾1
+M
+java:S3740œ"/Provide the parametrized type for this generic.(ÇÆõõ8Ü êã¾1
+R
+java:S3740¡"/Provide the parametrized type for this generic.(ÆœŸúûÿÿÿÿ8İ êã¾1
+M
+java:S3740Å"/Provide the parametrized type for this generic.(ˆ÷‹’8İ êã¾1
+L
+java:S3740Ê"/Provide the parametrized type for this generic.(ò’­t8İ êã¾1
+L
+java:S3740Ï"/Provide the parametrized type for this generic.(§àŠ8İ êã¾1
+M
+java:S3740Ô"/Provide the parametrized type for this generic.(ÇÆõõ8İ êã¾1
+R
+java:S3740Ù"/Provide the parametrized type for this generic.(°±ÜÕÿÿÿÿÿ8İ êã¾1
+R
+java:S3740ò"/Provide the parametrized type for this generic.(âÜÒªùÿÿÿÿ8İ êã¾1
+L
+java:S3740÷"/Provide the parametrized type for this generic.(§àŠ8İ êã¾1
+M
+java:S3740ü"/Provide the parametrized type for this generic.(ÇÆõõ8İ êã¾1
+R
+java:S3740"/Provide the parametrized type for this generic.(°±ÜÕÿÿÿÿÿ8İ êã¾1
+R
+java:S3740"/Provide the parametrized type for this generic.(âÜÒªùÿÿÿÿ8İ êã¾1
+L
+java:S3740•"/Provide the parametrized type for this generic.(§àŠ8İ êã¾1
+M
+java:S3740š"/Provide the parametrized type for this generic.(ÇÆõõ8İ êã¾1
+R
+java:S3740"/Provide the parametrized type for this generic.(°±ÜÕÿÿÿÿÿ8İ êã¾1
+h
+java:S11920"LDefine a constant instead of duplicating this literal " not found" 16 times.(§àŠ8Ş êã¾1
+‚
+java:S1192_"`Define a constant instead of duplicating this literal "Ticket with ID {} not found: {}" 4 times.(ì®½Õùÿÿÿÿ8ß êã¾1
+|
+java:S11923"_Define a constant instead of duplicating this literal "Stage with ID {} not found: {}" 6 times.(Ùæ´¦8ß êã¾1
+x
+java:S1192:"VDefine a constant instead of duplicating this literal "Internal Server Error" 5 times.(°±ÜÕÿÿÿÿÿ8ß êã¾1
+m
+java:S11920"QDefine a constant instead of duplicating this literal "Project with ID " 6 times.(§àŠ8ß êã¾1
+ƒ
+java:S1192."aDefine a constant instead of duplicating this literal "Project with ID {} not found: {}" 6 times.(€Ö¤Øıÿÿÿÿ8ß êã¾1
+r
+java:S1192a"PDefine a constant instead of duplicating this literal "Ticket with ID " 4 times.(âÜÒªùÿÿÿÿ8ß êã¾1
+l
+java:S11925"ODefine a constant instead of duplicating this literal "Stage with ID " 6 times.(ÇÆõõ8ß êã¾1
+r
+java:S3655M"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(÷óÂŞøÿÿÿÿ8Öœìã¾1
+}
+java:S3655¹"ZCall "updatedTicket.isPresent()" or "!updatedTicket.isEmpty()" before accessing the value.(¼ù®øÿÿÿÿ8«¡êã¾1
+H
+java:S1452&"&Remove usage of generic wildcard type.(÷Œ¢‹úÿÿÿÿ8³¡êã¾1
+C
+java:S1452H"&Remove usage of generic wildcard type.(î•Å¥8¹¡êã¾1
+H
+java:S1452~"&Remove usage of generic wildcard type.(ªÆÛòøÿÿÿÿ8Ã¡êã¾1
+X	java:S125‹"<This block of commented-out lines of code should be removed.(ÔÖŞA8Å¡êã¾1
+I
+java:S1452¯"&Remove usage of generic wildcard type.(×ˆ© üÿÿÿÿ8Ê¡êã¾1
+X	java:S125¿"<This block of commented-out lines of code should be removed.(ÔÖŞA8Í¡êã¾1
+D
+java:S1452è"&Remove usage of generic wildcard type.(ó–òê8Ò¡êã¾1
+D
+java:S1452‡"&Remove usage of generic wildcard type.(ö· Û8Ö¡êã¾1
+l
+java:S1128"ORemove this unused import 'com.workflow.customException.UserNotFoundException'.(ÿŞ¿ƒ8…ìã¾1

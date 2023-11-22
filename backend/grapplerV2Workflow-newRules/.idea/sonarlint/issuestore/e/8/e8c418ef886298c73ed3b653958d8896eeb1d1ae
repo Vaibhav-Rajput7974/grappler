@@ -1,0 +1,42 @@
+
+z
+java:S11923"XDefine a constant instead of duplicating this literal " not found for Project " 6 times.(îéœ÷şÿÿÿÿ8šµã¾1
+s
+java:S11926"QDefine a constant instead of duplicating this literal "Project with ID " 6 times.(²ñËÊşÿÿÿÿ8šµã¾1
+r
+java:S1192P"PDefine a constant instead of duplicating this literal "Ticket with ID " 4 times.(Ìï·’ûÿÿÿÿ8šµã¾1
+q
+java:S11923"ODefine a constant instead of duplicating this literal "Stage with ID " 6 times.(îéœ÷şÿÿÿÿ8šµã¾1
+n
+java:S11926"LDefine a constant instead of duplicating this literal " not found." 9 times.(²ñËÊşÿÿÿÿ8šµã¾1
+}
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "ticket1".(ÊÏ’ñ8œµã¾1
+n
+java:S3655Ö"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ø×¨†8…µã¾1
+s
+java:S3655®"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.( ò¯úÿÿÿÿ8›“·ã¾1
+u
+java:S21398"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8’µã¾1
+u
+java:S2139`"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8˜µã¾1
+W	java:S125x"<This block of commented-out lines of code should be removed.(º™ñ%8µã¾1
+v
+java:S2139Š"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8Ÿµã¾1
+^	java:S125¤"<This block of commented-out lines of code should be removed.(Õ¡ÉÒÿÿÿÿÿ8§µã¾1
+M	java:S106±"+Replace this use of System.out by a logger.(º½²‡üÿÿÿÿ8ªµã¾1
+v
+java:S2139Á"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8¬µã¾1
+M	java:S106Ï"+Replace this use of System.out by a logger.(òĞÍôûÿÿÿÿ8°µã¾1
+^	java:S125Ø"<This block of commented-out lines of code should be removed.(úº×µøÿÿÿÿ8²µã¾1
+v
+java:S2139å"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8³µã¾1
+\
+java:S1854ù"9Remove this useless assignment to local variable "stage".(ˆ¼×•ÿÿÿÿÿ8µµã¾1
+M
+java:S1481ù"*Remove this unused "stage" local variable.(ˆ¼×•ÿÿÿÿÿ8ºµã¾1
+Y	java:S125ü"<This block of commented-out lines of code should be removed.(•´š³8ºµã¾1
+v
+java:S2139Š"XEither log this exception and handle it, or rethrow it with some contextual information.(”ı¾8»µã¾1
+W
+java:S1128
+"5Remove this unused import 'com.workflow.entity.User'.(ş‚¦øÿÿÿÿ8Š”·ã¾1

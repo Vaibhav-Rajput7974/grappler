@@ -1,0 +1,534 @@
+2023-11-22 11:37:59,505 [INFO] com.workflow.WorkflowApplication [restartedMain] Starting WorkflowApplication using Java 17.0.7 with PID 5692 (C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules\target\classes started by hp in C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules)
+2023-11-22 11:37:59,544 [INFO] com.workflow.WorkflowApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-11-22 11:37:59,872 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 11:37:59,883 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 11:38:03,729 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 11:38:04,167 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 403 ms. Found 6 JPA repository interfaces.
+2023-11-22 11:38:11,570 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-22 11:38:11,699 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-11-22 11:38:11,701 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-22 11:38:12,719 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-22 11:38:12,720 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 12835 ms
+2023-11-22 11:38:14,244 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 11:38:14,558 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-22 11:38:14,565 [INFO] org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-11-22 11:38:15,881 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 11:38:16,594 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-22 11:38:16,662 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-22 11:38:22,200 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@267011a1
+2023-11-22 11:38:22,237 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-22 11:38:25,809 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.actionConditionType.ActionCondition] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 11:38:27,300 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.triggerConditionTypes.TriggerConditions] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 11:38:28,164 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 11:38:35,233 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 11:38:37,124 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 11:38:39,397 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 11:38:42,824 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-22 11:38:42,996 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 11:38:43,012 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Starting...
+2023-11-22 11:38:43,012 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71d4715e]]
+2023-11-22 11:38:43,027 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Started.
+2023-11-22 11:38:43,090 [INFO] com.workflow.WorkflowApplication [restartedMain] Started WorkflowApplication in 45.955 seconds (process running for 49.939)
+2023-11-22 11:38:44,363 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 11:38:44,363 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 11:38:44,536 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 11:38:44,536 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 11:38:44,551 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:44,599 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:38:49,777 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 11:38:49,780 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-22 11:38:49,788 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 6 ms
+2023-11-22 11:38:49,998 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-1] Retrieving all projects
+2023-11-22 11:38:50,099 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-1] Retrieved all projects
+2023-11-22 11:38:51,897 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-8] Retrieving project with ID = 1
+2023-11-22 11:38:51,897 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-8] Project with ID 1 found
+2023-11-22 11:38:51,996 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-9] Retrieving project with ID = 1
+2023-11-22 11:38:51,996 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-9] Project with ID 1 found
+2023-11-22 11:39:05,303 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-4] Get Ticket By Id
+2023-11-22 11:39:05,305 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-4] Retrieved Ticket by Ticket ID
+2023-11-22 11:39:39,364 [INFO] org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 12]
+2023-11-22 11:39:43,198 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 11:39:43,199 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 11:39:43,258 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 11:39:43,259 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 11:39:43,259 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,261 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,262 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,263 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,264 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 11:39:43,265 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 11:39:43,317 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 11:39:43,318 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 11:39:43,318 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,319 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,320 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:43,321 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:39:55,664 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-8] Get Ticket By Id
+2023-11-22 11:39:55,665 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-8] Retrieved Ticket by Ticket ID
+2023-11-22 11:39:57,453 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-10] Get Ticket By Id
+2023-11-22 11:39:57,454 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-10] Retrieved Ticket by Ticket ID
+2023-11-22 11:40:00,980 [INFO] com.workflow.service.StageService [http-nio-8080-exec-5] Stage updated successfully
+2023-11-22 11:40:00,986 [INFO] com.workflow.controller.StageController [http-nio-8080-exec-5] Stage Updated Successfully
+2023-11-22 11:40:01,128 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-3] Get Ticket By Id
+2023-11-22 11:40:01,128 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-3] Retrieved Ticket by Ticket ID
+2023-11-22 11:40:43,141 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:40:43,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:40:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:40:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:40:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:40:43,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:40:43,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:40:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:40:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:41:43,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after---less
+2023-11-22 11:41:43,164 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after date exicuted
+2023-11-22 11:41:43,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] state cheak
+2023-11-22 11:41:43,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] date
+2023-11-22 11:41:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,197 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after---less
+2023-11-22 11:41:43,197 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after date exicuted
+2023-11-22 11:41:43,223 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] state cheak
+2023-11-22 11:41:43,223 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] date
+2023-11-22 11:41:43,223 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,224 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,224 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:41:43,224 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 11:42:43,132 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 11:42:43,134 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 11:42:43,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 11:42:43,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 11:42:43,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,164 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 11:42:43,164 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 11:42:43,199 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 11:42:43,200 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 11:42:43,200 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,201 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,203 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:42:43,204 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:43:43,146 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 11:43:43,147 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 11:43:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 11:43:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 11:43:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,180 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 11:43:43,180 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 11:43:43,209 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 11:43:43,210 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 11:43:43,210 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,210 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,210 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:43:43,210 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 11:44:43,128 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:44:43,129 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:44:43,151 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:44:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:44:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:44:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:44:43,177 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:44:43,177 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:44:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:44:43,179 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:45:43,123 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] after---less
+2023-11-22 11:45:43,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] after date exicuted
+2023-11-22 11:45:43,147 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] state cheak
+2023-11-22 11:45:43,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] date
+2023-11-22 11:45:43,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] after---less
+2023-11-22 11:45:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] after date exicuted
+2023-11-22 11:45:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] state cheak
+2023-11-22 11:45:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-7] date
+2023-11-22 11:45:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:45:43,176 [INFO] com.workflow.service.TriggerStart [MessageBroker-7]  ticket 
+2023-11-22 11:46:43,132 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 11:46:43,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 11:46:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 11:46:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 11:46:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,159 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,159 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 11:46:43,159 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 11:46:43,183 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 11:46:43,183 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 11:46:43,184 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,184 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,184 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:46:43,184 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 11:47:43,131 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 11:47:43,132 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 11:47:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 11:47:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 11:47:43,152 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 11:47:43,153 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 11:47:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 11:47:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 11:47:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,174 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:47:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:48:43,121 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 11:48:43,122 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 11:48:43,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 11:48:43,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 11:48:43,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 11:48:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 11:48:43,166 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 11:48:43,166 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 11:48:43,166 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:48:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,126 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 11:49:43,127 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 11:49:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 11:49:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 11:49:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,151 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,151 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 11:49:43,151 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 11:49:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 11:49:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 11:49:43,175 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,176 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,176 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:49:43,176 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 11:50:43,113 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:50:43,114 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:50:43,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:50:43,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:50:43,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,149 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after---less
+2023-11-22 11:50:43,150 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] after date exicuted
+2023-11-22 11:50:43,176 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] state cheak
+2023-11-22 11:50:43,177 [INFO] com.workflow.service.TriggerStart [MessageBroker-4] date
+2023-11-22 11:50:43,177 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:50:43,178 [INFO] com.workflow.service.TriggerStart [MessageBroker-4]  ticket 
+2023-11-22 11:51:43,130 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 11:51:43,131 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 11:51:43,156 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 11:51:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 11:51:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,157 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 11:51:43,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 11:51:43,181 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 11:51:43,181 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 11:51:43,181 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,182 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,182 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:51:43,182 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 11:52:43,121 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 11:52:43,122 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 11:52:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 11:52:43,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 11:52:43,144 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,144 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,144 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,144 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,145 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 11:52:43,145 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 11:52:43,166 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 11:52:43,166 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 11:52:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,167 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:52:43,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 11:53:02,478 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopping...
+2023-11-22 11:53:02,479 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@71d4715e]]
+2023-11-22 11:53:02,480 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopped.
+2023-11-22 11:53:02,582 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 11:53:02,597 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-22 11:53:02,632 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-22 14:10:10,865 [INFO] com.workflow.WorkflowApplication [restartedMain] Starting WorkflowApplication using Java 17.0.7 with PID 22252 (C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules\target\classes started by hp in C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules)
+2023-11-22 14:10:10,871 [INFO] com.workflow.WorkflowApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-11-22 14:10:10,970 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 14:10:10,971 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 14:10:12,439 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 14:10:12,590 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 127 ms. Found 6 JPA repository interfaces.
+2023-11-22 14:10:13,769 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-22 14:10:13,787 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-11-22 14:10:13,787 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-22 14:10:13,905 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-22 14:10:13,905 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2933 ms
+2023-11-22 14:10:14,211 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 14:10:14,345 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-22 14:10:14,348 [INFO] org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-11-22 14:10:14,640 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 14:10:14,891 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-22 14:10:14,921 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-22 14:10:16,031 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10a71b6d
+2023-11-22 14:10:16,035 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-22 14:10:16,464 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.actionConditionType.ActionCondition] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 14:10:16,653 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.triggerConditionTypes.TriggerConditions] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 14:10:16,776 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 14:10:18,376 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 14:10:19,020 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 14:10:20,107 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 14:10:21,542 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-22 14:10:21,622 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 14:10:21,625 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Starting...
+2023-11-22 14:10:21,628 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@48713310]]
+2023-11-22 14:10:21,628 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Started.
+2023-11-22 14:10:21,643 [INFO] com.workflow.WorkflowApplication [restartedMain] Started WorkflowApplication in 11.547 seconds (process running for 17.205)
+2023-11-22 14:10:22,110 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:10:22,110 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:10:22,187 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:10:22,188 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:10:22,192 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,194 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,195 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:10:22,196 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:10:22,221 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:10:22,222 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:10:22,222 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,222 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,223 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:10:22,223 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:11:01,095 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 14:11:01,095 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-22 14:11:01,100 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
+2023-11-22 14:11:01,208 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-1] Retrieving all projects
+2023-11-22 14:11:01,240 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-1] Retrieved all projects
+2023-11-22 14:11:03,648 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-5] Retrieving project with ID = 1
+2023-11-22 14:11:03,648 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-5] Project with ID 1 found
+2023-11-22 14:11:03,679 [INFO] com.workflow.service.ProjectService [http-nio-8080-exec-6] Retrieving project with ID = 1
+2023-11-22 14:11:03,679 [INFO] com.workflow.controller.ProjectController [http-nio-8080-exec-6] Project with ID 1 found
+2023-11-22 14:11:20,077 [INFO] org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-4] WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], outboundChannel[pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 3, completed tasks = 5]
+2023-11-22 14:11:21,200 [INFO] com.workflow.service.StageService [http-nio-8080-exec-5] Stage updated successfully
+2023-11-22 14:11:21,255 [INFO] com.workflow.controller.StageController [http-nio-8080-exec-5] Stage Updated Successfully
+2023-11-22 14:11:21,679 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after---less
+2023-11-22 14:11:21,679 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after date exicuted
+2023-11-22 14:11:21,694 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] state cheak
+2023-11-22 14:11:21,694 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] date
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after---less
+2023-11-22 14:11:21,710 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] after date exicuted
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] state cheak
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6] date
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:21,733 [INFO] com.workflow.service.TriggerStart [MessageBroker-6]  ticket 
+2023-11-22 14:11:46,230 [INFO] com.workflow.service.StageService [http-nio-8080-exec-8] Stage updated successfully
+2023-11-22 14:11:46,468 [INFO] com.workflow.controller.StageController [http-nio-8080-exec-8] Stage Updated Successfully
+2023-11-22 14:11:52,580 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-10] Get Ticket By Id
+2023-11-22 14:11:52,580 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-10] Retrieved Ticket by Ticket ID
+2023-11-22 14:12:21,706 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 14:12:21,708 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 14:12:21,735 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 14:12:21,736 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 14:12:21,736 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,736 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,737 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,737 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,737 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after---less
+2023-11-22 14:12:21,738 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] after date exicuted
+2023-11-22 14:12:21,767 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] state cheak
+2023-11-22 14:12:21,767 [INFO] com.workflow.service.TriggerStart [MessageBroker-8] date
+2023-11-22 14:12:21,767 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,768 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,768 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:21,768 [INFO] com.workflow.service.TriggerStart [MessageBroker-8]  ticket 
+2023-11-22 14:12:48,091 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopping...
+2023-11-22 14:12:48,091 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@48713310]]
+2023-11-22 14:12:48,091 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [SpringApplicationShutdownHook] Stopped.
+2023-11-22 14:12:48,144 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 14:12:48,150 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-22 14:12:48,179 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-22 14:12:58,296 [INFO] com.workflow.WorkflowApplication [restartedMain] Starting WorkflowApplication using Java 17.0.7 with PID 11780 (C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules\target\classes started by hp in C:\Users\hp\Downloads\grapplerV2Workflow-newRules\grapplerV2Workflow-newRules)
+2023-11-22 14:12:58,307 [INFO] com.workflow.WorkflowApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-11-22 14:12:58,424 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 14:12:58,424 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 14:12:59,659 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 14:12:59,797 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 116 ms. Found 6 JPA repository interfaces.
+2023-11-22 14:13:00,926 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-22 14:13:00,942 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-11-22 14:13:00,942 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-11-22 14:13:01,067 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-22 14:13:01,067 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2638 ms
+2023-11-22 14:13:01,421 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 14:13:01,573 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-11-22 14:13:01,586 [INFO] org.hibernate.cfg.Environment [restartedMain] HHH000406: Using bytecode reflection optimizer
+2023-11-22 14:13:01,904 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 14:13:02,216 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-22 14:13:02,242 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-22 14:13:03,081 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c9d355
+2023-11-22 14:13:03,096 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-22 14:13:03,610 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.actionConditionType.ActionCondition] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 14:13:03,836 [WARN] org.hibernate.boot.model.internal.EntityBinder [restartedMain] HHH000457: Joined inheritance hierarchy [com.workflow.entity.triggerConditionTypes.TriggerConditions] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-11-22 14:13:03,946 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [restartedMain] HHH000021: Bytecode provider name : bytebuddy
+2023-11-22 14:13:06,993 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 14:13:07,558 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 14:13:08,884 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 14:13:09,967 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-22 14:13:10,041 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 14:13:10,044 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Starting...
+2023-11-22 14:13:10,046 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2548fd33]]
+2023-11-22 14:13:10,046 [INFO] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler [restartedMain] Started.
+2023-11-22 14:13:10,059 [INFO] com.workflow.WorkflowApplication [restartedMain] Started WorkflowApplication in 12.627 seconds (process running for 13.716)
+2023-11-22 14:13:11,113 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:13:11,114 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:13:11,185 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:13:11,186 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:13:11,189 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,190 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,191 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,191 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,192 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:13:11,192 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:13:11,219 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:13:11,219 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:13:11,219 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,220 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,220 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:11,221 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:13:23,051 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 14:13:23,052 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-11-22 14:13:23,054 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2023-11-22 14:13:23,323 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-3] project with id 1
+2023-11-22 14:13:23,323 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-3] stage with id 2
+2023-11-22 14:13:23,328 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-3] ticket with id 12
+2023-11-22 14:13:23,516 [INFO] com.workflow.service.TicketService [http-nio-8080-exec-3] Ticket Updated Successfully
+2023-11-22 14:13:23,517 [INFO] com.workflow.controller.TicketController [http-nio-8080-exec-3] Updated Ticket Successfully
+2023-11-22 14:14:08,868 [INFO] org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-2] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2023-11-22 14:14:10,114 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:14:10,115 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:14:10,140 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:14:10,140 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:14:10,141 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,141 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,142 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after---less
+2023-11-22 14:14:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] after date exicuted
+2023-11-22 14:14:10,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] state cheak
+2023-11-22 14:14:10,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-1] date
+2023-11-22 14:14:10,162 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:14:10,163 [INFO] com.workflow.service.TriggerStart [MessageBroker-1]  ticket 
+2023-11-22 14:15:10,096 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 14:15:10,096 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 14:15:10,111 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:15:10,143 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:16:10,101 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 14:16:10,101 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after---less
+2023-11-22 14:16:10,133 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] after date exicuted
+2023-11-22 14:16:10,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] state cheak
+2023-11-22 14:16:10,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-3] date
+2023-11-22 14:16:10,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,148 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:16:10,158 [INFO] com.workflow.service.TriggerStart [MessageBroker-3]  ticket 
+2023-11-22 14:17:10,119 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 14:17:10,120 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after---less
+2023-11-22 14:17:10,135 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] after date exicuted
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] state cheak
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5] date
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:17:10,168 [INFO] com.workflow.service.TriggerStart [MessageBroker-5]  ticket 
+2023-11-22 14:18:10,093 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 14:18:10,093 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after---less
+2023-11-22 14:18:10,124 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] after date exicuted
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] state cheak
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2] date
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 
+2023-11-22 14:18:10,139 [INFO] com.workflow.service.TriggerStart [MessageBroker-2]  ticket 

@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+  /* Styles for the main application */
+}
+
+.mainComponent {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  /* Styles for the main content container */
+}
+
+.stageComponent {
+  display: flex;
+  overflow-x: scroll;
+  /* Styles for the stages container with horizontal scrolling */
+}
+
+/* Styles for scrollbar appearance */
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;  
+  /* Hides the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  /* Styles for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  /* Styles for scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  /* Styles for scrollbar handle on hover */
+}
+
+/* Animation for the App logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    /* Spinning animation for the App logo */
+  }
+}
+
+/* Styles for the header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Styles for links in the App */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation keyframes for the App logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#sidebar {
+  background-color: #333;
+  height: 100%;
+  /* Styles for the sidebar */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds height */
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  /* Styles for active navigation links */
+}
+
+.dropbtn {
+  background-color: #f0f8ff;
+  color: #000;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  /* Styles for dropdown button */
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #e4e7ea;
+  min-width: 160px;
+  z-index: 1;
+  /* Styles for dropdown content */
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* Styles for dropdown items */
+}
+
+.dropdown-content a:hover {
+  background-color: #cce6ff;
+  /* Styles for dropdown items on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* Show dropdown content on hover */
+}
+
+/* Add this to your CSS file */
+.project-link {
+  color: white; /* Default text color for project links */
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: color 0.3s; /* Smooth color transition on hover */
+
+}
+
+.project-link:hover {
+  color: hsl(54, 51%, 64%); /* Text color on hover */
+  text-decoration: underline; /* Underline on hover (you can adjust as needed) */
+}
+
+/* styles.css */
+/* .stage-container {
+  display: flex;
+} */
+
+.plus-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plus-button {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.react-beautiful-dnd-draggable {
+  transition: transform 0.2s;
+}

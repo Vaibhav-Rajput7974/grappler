@@ -1,0 +1,65 @@
+
+E
+java:S3740,"/Provide the parametrized type for this generic.(ºâşƒ
+E
+java:S37401"/Provide the parametrized type for this generic.(Ïˆ×É
+J
+java:S3740B"/Provide the parametrized type for this generic.(â•ÂÊşÿÿÿÿ
+J
+java:S3740G"/Provide the parametrized type for this generic.(åœÚ¶ıÿÿÿÿ
+E
+java:S3740L"/Provide the parametrized type for this generic.(Û¦·½
+E
+java:S3740Q"/Provide the parametrized type for this generic.(‡¯”ì
+J
+java:S3740h"/Provide the parametrized type for this generic.(‹ƒÀøÿÿÿÿ
+J
+java:S3740l"/Provide the parametrized type for this generic.(¿ö˜èüÿÿÿÿ
+J
+java:S3740q"/Provide the parametrized type for this generic.(ŞÎ‰×øÿÿÿÿ
+F
+java:S3740‚"/Provide the parametrized type for this generic.(›œì¿
+K
+java:S3740‡"/Provide the parametrized type for this generic.(¿ö˜èüÿÿÿÿ
+F
+java:S3740Œ"/Provide the parametrized type for this generic.(ÉÏê
+K
+java:S3740‘"/Provide the parametrized type for this generic.(µ¦ıÖüÿÿÿÿ
+F
+java:S3740¢"/Provide the parametrized type for this generic.(ıò›Î
+K
+java:S3740¦"/Provide the parametrized type for this generic.(¿ö˜èüÿÿÿÿ
+F
+java:S3740«"/Provide the parametrized type for this generic.(Û¦·½
+E
+java:S3740°"/Provide the parametrized type for this generic.(¯š¡0
+E
+java:S3740¿"/Provide the parametrized type for this generic.(¯š¡0
+v
+java:S1192J"[Define a constant instead of duplicating this literal "Stage with ID {} Not Found" 3 times.(öÍ‚Öüÿÿÿÿ
+x
+java:S1192*"]Define a constant instead of duplicating this literal "Project with ID {} Not Found" 5 times.(ù†Âñøÿÿÿÿ
+a
+java:S1192,"KDefine a constant instead of duplicating this literal " Not Found" 8 times.(ºâşƒ
+l
+java:S1192l"QDefine a constant instead of duplicating this literal "Project with ID " 3 times.(¿ö˜èüÿÿÿÿ
+{
+java:S1192®"dDefine a constant instead of duplicating this literal "Error occurred while deleting stage" 4 times.(™èº²
+e
+java:S1192L"ODefine a constant instead of duplicating this literal "Stage with ID " 3 times.(Û¦·½
+<
+java:S1452""&Remove usage of generic wildcard type.(‡ò¿Ê
+A
+java:S1452="&Remove usage of generic wildcard type.(¼êØàüÿÿÿÿ
+T
+java:S1854_">Remove this useless assignment to local variable "savedStage".(¬ëÑß
+<
+java:S1452]"&Remove usage of generic wildcard type.(¤«Ò
+E
+java:S1481_"/Remove this unused "savedStage" local variable.(¬ëÑß
+A
+java:S1452}"&Remove usage of generic wildcard type.(Œö´çÿÿÿÿÿ
+=
+java:S1452"&Remove usage of generic wildcard type.(»µ®´
+B
+java:S1452µ"&Remove usage of generic wildcard type.(ˆ´×»ÿÿÿÿÿ
