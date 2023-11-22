@@ -39,27 +39,27 @@ public class TicketService {
       if (projectOptional.isPresent()) {
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId() == (stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId() == (stageId))
+                        .findFirst();
         if (stageOptional.isPresent()) {
           List<Ticket> tickets = stageOptional.get().getTicketList();
           logger.info("List Of Tickets In The Stage");
           return tickets;
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");
       }
     } catch (Exception e) {
       logger.error(
-          "Error occurred while retrieving tickets by Project ID {} and Stage ID {}: {}",
-          projectId,
-          stageId,
-          e.getMessage(),
-          e);
+              "Error occurred while retrieving tickets by Project ID {} and Stage ID {}: {}",
+              projectId,
+              stageId,
+              e.getMessage(),
+              e);
       throw e;
     }
   }
@@ -70,37 +70,37 @@ public class TicketService {
       if (projectOptional.isPresent()) {
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId() == (stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId() == (stageId))
+                        .findFirst();
         if (stageOptional.isPresent()) {
           Optional<Ticket> ticket = ticketRepo.findById(ticketId);
           if (!ticket.isPresent()) {
             throw new TicketNotFoundException(
-                "Ticket with ID "
-                    + ticketId
-                    + " not found in Project "
-                    + projectId
-                    + " and Stage "
-                    + stageId);
+                    "Ticket with ID "
+                            + ticketId
+                            + " not found in Project "
+                            + projectId
+                            + " and Stage "
+                            + stageId);
           }
           logger.info("Get Ticket By Id");
           return ticket;
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");
       }
     } catch (Exception e) {
       logger.error(
-          "Error occurred while retrieving ticket by ID {} in Project {} and Stage {}: {}",
-          ticketId,
-          projectId,
-          stageId,
-          e.getMessage(),
-          e);
+              "Error occurred while retrieving ticket by ID {} in Project {} and Stage {}: {}",
+              ticketId,
+              projectId,
+              stageId,
+              e.getMessage(),
+              e);
       throw e;
     }
   }
@@ -111,9 +111,9 @@ public class TicketService {
       if (projectOptional.isPresent()) {
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId() == (stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId() == (stageId))
+                        .findFirst();
         if (stageOptional.isPresent()) {
           addTicket.setStage(stageOptional.get());
           logger.info("Ticket Added SuccessFully");
@@ -130,7 +130,7 @@ public class TicketService {
           return ticket1;
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");
@@ -142,15 +142,15 @@ public class TicketService {
   }
 
   public Optional<Ticket> updateTicket(TicketDto updateTicket, Long projectId, Long stageId)
-      throws InvocationTargetException, IllegalAccessException {
+          throws InvocationTargetException, IllegalAccessException {
     try {
       Optional<Project> projectOptional = projectRepo.findById(projectId);
       if (projectOptional.isPresent()) {
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId().equals(stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId().equals(stageId))
+                        .findFirst();
         logger.info("project with id {}", projectId);
         if (stageOptional.isPresent()) {
           logger.info("stage with id {}", stageId);
@@ -175,27 +175,27 @@ public class TicketService {
               existingTicket.setStage(newStage);
             }
             System.out.println("dsds" + existingTicket.getStage().getStageId());
+            triggerStart.triggerOnUpdate(existingTicketDummy, existingTicket, projectId);
             Ticket ticket = ticketRepo.save(existingTicket);
-            triggerStart.triggerOnUpdate(existingTicketDummy, ticket, projectId);
             logger.info("Ticket Updated Successfully");
             return Optional.of(ticket);
           } else {
             throw new TicketNotFoundException(
-                "Ticket with ID " + updateTicket.getTicketId() + " not found.");
+                    "Ticket with ID " + updateTicket.getTicketId() + " not found.");
           }
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");
       }
     } catch (Exception e) {
       logger.error(
-          "Error occurred while updating ticket with ID {}: {} :" + "{}",
-          updateTicket.getTicketId(),
-          e.getMessage(),
-          e);
+              "Error occurred while updating ticket with ID {}: {} :" + "{}",
+              updateTicket.getTicketId(),
+              e.getMessage(),
+              e);
       throw e;
     }
   }
@@ -207,9 +207,9 @@ public class TicketService {
         System.out.println(projectOptional.isPresent());
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId() == (stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId() == (stageId))
+                        .findFirst();
         if (stageOptional.isPresent()) {
           Ticket ticket = ticketRepo.findById(ticketId).get();
           if (ticket != null) {
@@ -221,7 +221,7 @@ public class TicketService {
           }
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");
@@ -238,9 +238,9 @@ public class TicketService {
       if (projectOptional.isPresent()) {
         Project project = projectOptional.get();
         Optional<Stage> stageOptional =
-            project.getStageList().stream()
-                .filter(stage -> stage.getStageId().equals(stageId))
-                .findFirst();
+                project.getStageList().stream()
+                        .filter(stage -> stage.getStageId().equals(stageId))
+                        .findFirst();
         if (stageOptional.isPresent()) {
           Stage newstage = stageOptional.get();
           Optional<Ticket> optionalTicket = ticketRepo.findById(ticketId);
@@ -258,7 +258,7 @@ public class TicketService {
           }
         } else {
           throw new StageNotFoundException(
-              "Stage with ID " + stageId + " not found for Project " + projectId);
+                  "Stage with ID " + stageId + " not found for Project " + projectId);
         }
       } else {
         throw new ProjectNotFoundException("Project with ID " + projectId + " not found.");

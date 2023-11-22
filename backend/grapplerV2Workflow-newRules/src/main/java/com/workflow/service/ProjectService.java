@@ -25,18 +25,13 @@ public class ProjectService {
 
     private static final Logger logger = LoggerFactory.getLogger(ProjectService.class);
 
-    @Autowired
-    private ProjectRepo projectRepo;
+    @Autowired private ProjectRepo projectRepo;
 
-    @Autowired
-    private TriggerStart triggerStart;
+    @Autowired private TriggerStart triggerStart;
 
-    @Autowired
-    private RuleRepo ruleRepo;
+    @Autowired private RuleRepo ruleRepo;
 
-    @Autowired
-    private FieldRepo fieldRepo;
-
+    @Autowired private FieldRepo fieldRepo;
 
     /**
      * Retrieve a list of all projects.
@@ -72,7 +67,8 @@ public class ProjectService {
                 throw new ProjectNotFoundException("Project with ID " + projectId + " not found");
             }
         } catch (Exception e) {
-            logger.error("Error occurred while retrieving project by ID {}: {}", projectId, e.getMessage());
+            logger.error(
+                    "Error occurred while retrieving project by ID {}: {}", projectId, e.getMessage());
             throw e;
         }
     }
@@ -112,34 +108,42 @@ public class ProjectService {
                 throw new ProjectNotFoundException("Project with ID " + projectId + " not found");
             }
         } catch (Exception e) {
-            logger.error("Error occurred while deleting project by ID {}: {}", projectId, e.getMessage(), e);
+            logger.error(
+                    "Error occurred while deleting project by ID {}: {}", projectId, e.getMessage(), e);
             throw e;
         }
     }
 
     @Scheduled(cron = "0 * * * * *")
     public void task1() {
-        Field field = fieldRepo.findByDataType("DATE");
-        List<Rule> ruleList = ruleRepo.findByTriggerField(field);
-        if(!ruleList.isEmpty()){
-            ruleList.forEach(rule-> {
-                if( rule.getTrigger() != null &&  rule.getTrigger().getConditionType() == ConditionOnTrigger.DATE){
-                    Date currentDate=new Date();
-                    DateTrigger dateTrigger = (DateTrigger) rule.getTrigger();
-                    try {
-                        triggerStart.triggerOnDate(dateTrigger,rule,rule.getProject().getProjectId());
-                    } catch (InvocationTargetException e) {
-                        throw new RuntimeException(e);
-                    } catch (IllegalAccessException e) {
-                        throw new RuntimeException(e);
-                    } catch (NoSuchMethodException e) {
-                        throw new RuntimeException(e);
+        List<Field> fieldList = fieldRepo.findByDataType("DATE");
+        fieldList.forEach(
+                field -> {
+                    List<Rule> ruleList = ruleRepo.findByTriggerField(field);
+                    if (!ruleList.isEmpty()) {
+                        ruleList.forEach(
+                                rule -> {
+                                    if (rule.getTrigger() != null
+                                            && rule.getTrigger().getConditionType() == ConditionOnTrigger.DATE) {
+                                        Date currentDate = new Date();
+                                        DateTrigger dateTrigger = (DateTrigger) rule.getTrigger();
+                                        try {
+                                            triggerStart.triggerOnDate(
+                                                    dateTrigger, rule, rule.getProject().getProjectId());
+                                        } catch (InvocationTargetException e) {
+                                            throw new RuntimeException(e);
+                                        } catch (IllegalAccessException e) {
+                                            throw new RuntimeException(e);
+                                        } catch (NoSuchMethodException e) {
+                                            throw new RuntimeException(e);
+                                        }
+                                        System.out.println("Task 1 executed at: " + currentDate);
+                                    }
+                                });
                     }
-                    System.out.println("Task 1 executed at: " + currentDate);
-                }
-            });
-        }
+                });
     }
+
     public List<Field> getAllField() {
         try {
             return fieldRepo.findAll();
@@ -147,5 +151,4 @@ public class ProjectService {
             throw e;
         }
     }
-
 }
