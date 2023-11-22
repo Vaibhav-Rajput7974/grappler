@@ -117,7 +117,7 @@ public class ProjectService {
         }
     }
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(cron = "0 * * * * *")
     public void task1() {
         Field field = fieldRepo.findByDataType("DATE");
         List<Rule> ruleList = ruleRepo.findByTriggerField(field);
